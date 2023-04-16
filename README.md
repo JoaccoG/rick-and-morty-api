@@ -5,6 +5,7 @@
 Choose a public API from where you want to retrieve data.<br>
 You will have to create a CRUD application using the public API. The application should have a listing page, a details page, and a form to create, read, update, and delete data.<br>
 This are the minimum requirements to start working on the challenge.
+
 - Trello backlog.
 - Figma design (375px and 1440px frames).
 - When building the figma design, keep in mind:
