@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import CharacterDetails from "../../components/CharacterDetails/CharacterDetails";
-import useAppHook from "../../hooks/useAppHook";
-import AppContext from "../../store/contexts/app.context";
+import { useContext, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import CharacterDetails from '../../components/CharacterDetails/CharacterDetails';
+import useAppHook from '../../hooks/useAppHook';
+import AppContext from '../../store/contexts/app.context';
 
 const CharacterDetailsPage = () => {
   const { getCharacterDetails } = useAppHook();

@@ -1,14 +1,14 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import AppContext from "../../store/contexts/app.context";
-import { AppState } from "../../types/appInterfaces";
-import Favorites from "./FavoritesPage";
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import AppContext from '../../store/contexts/app.context';
+import { AppState } from '../../types/appInterfaces';
+import Favorites from './FavoritesPage';
 
-describe("Given a favorites page", () => {
-  test("When the page renders and there are no favorites, then it should display only the title and a paragraph", () => {
+describe('Given a favorites page', () => {
+  test('When the page renders and there are no favorites, then it should display only the title and a paragraph', () => {
     render(<Favorites />);
-    const titleElement = screen.getByText("Favorites");
-    const paragraphElement = screen.getByRole("paragraph");
+    const titleElement = screen.getByText('Favorites');
+    const paragraphElement = screen.getByRole('paragraph');
     expect(titleElement).toBeInTheDocument();
     expect(paragraphElement).toBeInTheDocument();
   });
@@ -18,13 +18,13 @@ describe("Given a favorites page", () => {
       favCharacters: [
         {
           id: 1,
-          name: "Rick Sanchez",
-          status: "",
-          species: "",
-          gender: "",
-          image: "",
-          url: "",
-          created: "",
+          name: 'Rick Sanchez',
+          status: '',
+          species: '',
+          gender: '',
+          image: '',
+          url: '',
+          created: '',
           rating: 0,
         },
       ],
@@ -32,33 +32,33 @@ describe("Given a favorites page", () => {
       characters: [],
       planetDetails: {
         id: 0,
-        name: "",
-        type: "",
-        dimension: "",
-        created: "",
-        residents: [""],
+        name: '',
+        type: '',
+        dimension: '',
+        created: '',
+        residents: [''],
       },
       characterDetails: {
         id: 0,
-        name: "",
-        status: "",
-        species: "",
-        gender: "",
-        created: "",
-        image: "",
-        url: "",
+        name: '',
+        status: '',
+        species: '',
+        gender: '',
+        created: '',
+        image: '',
+        url: '',
       },
       currentPagePlanets: 1,
       currentPageCharacters: 1,
       favCharacter: {
         id: 0,
-        name: "",
-        status: "",
-        species: "",
-        gender: "",
-        image: "",
-        url: "",
-        created: "",
+        name: '',
+        status: '',
+        species: '',
+        gender: '',
+        image: '',
+        url: '',
+        created: '',
         rating: 0,
       },
     };
@@ -71,7 +71,7 @@ describe("Given a favorites page", () => {
       </MemoryRouter>
     );
 
-    const characterName = screen.getByText("Rick Sanchez");
+    const characterName = screen.getByText('Rick Sanchez');
     expect(characterName).toBeInTheDocument();
   });
 });

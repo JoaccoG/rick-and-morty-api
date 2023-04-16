@@ -1,5 +1,5 @@
-import { Title } from "../../components/Title/Title";
-import "./HomePage.css";
+import { Title } from '../../components/Title/Title';
+import './HomePage.css';
 
 const Home = () => {
   return (
@@ -40,12 +40,12 @@ const Home = () => {
         alt="Snuffles"
       />
       <Title text="Rick and Morty Universe" />
-      <p className="home-container__text" role={"paragraph"}>
+      <p className="home-container__text" role={'paragraph'}>
         Rick and Morty is an American adult animated science-fiction sitcom
         created by <span>Justin Roiland</span> and <span>Dan Harmon</span> for
         Cartoon Network's nighttime programming block <span>Adult Swim</span>.
-        The series follows the misadventures of cynical mad scientist{" "}
-        <span>Rick Sanchez</span> and his good-hearted but fretful grandson{" "}
+        The series follows the misadventures of cynical mad scientist{' '}
+        <span>Rick Sanchez</span> and his good-hearted but fretful grandson{' '}
         <span>Morty Smith</span>, who split their time between domestic life and
         interdimensional adventures that take place across an infinite number of
         realities, often travelling to other planets and dimensions through

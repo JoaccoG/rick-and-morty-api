@@ -29,8 +29,8 @@
   letter-spacing: 12vmax;
 }
 .error__container span:before {
-  content: "";
-  background-image: url("../../assets/404-img.webp");
+  content: '';
+  background-image: url('../../assets/404-img.webp');
   position: absolute;
   width: 100%;
   height: 100%;
