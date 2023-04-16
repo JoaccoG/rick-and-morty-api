@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import "./Footer.css";
+import { Link } from 'react-router-dom';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -12,19 +12,19 @@ const Footer = () => {
       <nav className="footer-cont__navbar">
         <ul>
           <li>
-            <Link to={"./"}>Home</Link>
+            <Link to={'./'}>Home</Link>
           </li>
           <li>
-            <Link to={"characters"}>Characters</Link>
+            <Link to={'characters'}>Characters</Link>
           </li>
           <li>
-            <Link to={"planets"}>Planets</Link>
+            <Link to={'planets'}>Planets</Link>
           </li>
           <li>
-            <Link to={"favorites"}>Favorites</Link>
+            <Link to={'favorites'}>Favorites</Link>
           </li>
           <li>
-            <Link to={"contact"}>Contact</Link>
+            <Link to={'contact'}>Contact</Link>
           </li>
         </ul>
       </nav>

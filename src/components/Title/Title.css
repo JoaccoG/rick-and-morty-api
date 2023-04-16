@@ -5,7 +5,7 @@
   width: 100%;
   margin: 1.5rem 0;
   font-size: 3.4rem;
-  font-family: "Schwifty", monospace;
+  font-family: 'Schwifty', monospace;
   color: var(--sec-color);
   letter-spacing: 2px;
   text-transform: capitalize;
