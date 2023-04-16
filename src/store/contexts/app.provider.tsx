@@ -49,7 +49,7 @@ const AppProvider: FC<DataProviderProps> = ({ children }) => {
     }
   );
 
-  const value = useMemo(() => ({ state, dispatch }), []);
+  const value = useMemo(() => ({ state, dispatch }), [state]);
   return (
     <>
       <AppContext.Provider value={value}>{children}</AppContext.Provider>
