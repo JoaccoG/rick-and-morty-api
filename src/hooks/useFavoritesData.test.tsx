@@ -1,10 +1,10 @@
-import { act, renderHook } from "@testing-library/react";
-import useFavoriteData from "./useFavoritesData";
+import { act, renderHook } from '@testing-library/react';
+import useFavoriteData from './useFavoritesData';
 
-const mockCharacter = { id: 1, name: "Rick Sanchez" };
+const mockCharacter = { id: 1, name: 'Rick Sanchez' };
 
-describe("Given a useFavoriteData custom hook", () => {
-  test("removeFavCharacter removes a character from favorites", async () => {
+describe('Given a useFavoriteData custom hook', () => {
+  test('removeFavCharacter removes a character from favorites', async () => {
     const { result } = renderHook(() => useFavoriteData());
 
     await act(async () => {
