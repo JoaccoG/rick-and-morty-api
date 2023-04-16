@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import "./Header.css";
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   return (
     <header className="header__container">
       <div className="header-cont__logo">
-        <Link to={"./"}>
+        <Link to={'./'}>
           <img src="../assets/logo.png" alt="rick and morty logo" />
         </Link>
       </div>
@@ -16,19 +16,19 @@ const Header = () => {
       <nav className="header-cont__navbar">
         <ul>
           <li>
-            <Link to={"./"}>Home</Link>
+            <Link to={'./'}>Home</Link>
           </li>
           <li>
-            <Link to={"characters"}>Characters</Link>
+            <Link to={'characters'}>Characters</Link>
           </li>
           <li>
-            <Link to={"planets"}>Planets</Link>
+            <Link to={'planets'}>Planets</Link>
           </li>
           <li>
-            <Link to={"favorites"}>Favorites</Link>
+            <Link to={'favorites'}>Favorites</Link>
           </li>
           <li>
-            <Link to={"contact"}>Contact</Link>
+            <Link to={'contact'}>Contact</Link>
           </li>
         </ul>
       </nav>

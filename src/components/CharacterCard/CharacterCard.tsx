@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "./CharacterCard.css";
-import { FC, useContext } from "react";
-import { Character } from "../../types/appInterfaces";
-import { Link } from "react-router-dom";
-import { IconName } from "@fortawesome/fontawesome-svg-core";
-import useFavoriteData from "../../hooks/useFavoritesData";
-import AppContext from "../../store/contexts/app.context";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import './CharacterCard.css';
+import { FC, useContext } from 'react';
+import { Character } from '../../types/appInterfaces';
+import { Link } from 'react-router-dom';
+import { IconName } from '@fortawesome/fontawesome-svg-core';
+import useFavoriteData from '../../hooks/useFavoritesData';
+import AppContext from '../../store/contexts/app.context';
 
 interface CharacterCardProps {
   character: Character;
@@ -22,21 +22,21 @@ const CharacterCard: FC<CharacterCardProps> = ({ character, icon }) => {
     <article className="characters-card__container">
       <section className="characters-card__img-and-fav">
         <span>#{character.id}</span>
-        {icon === "star" ? (
+        {icon === 'star' ? (
           <FontAwesomeIcon
             className={`fav-icon ${
               favCharacters.find((favCharac) => favCharac.id === character.id)
-                ? "fav-icon--in-favorites"
-                : ""
+                ? 'fav-icon--in-favorites'
+                : ''
             }`}
-            icon={solid("star")}
+            icon={solid('star')}
             onClick={() => addFavCharacter(character.id)}
             data-testid="button-1"
           />
         ) : (
           <FontAwesomeIcon
             className="fav-icon"
-            icon={solid("xmark")}
+            icon={solid('xmark')}
             onClick={() => removeFavCharacter(character.id)}
             data-testid="button-2"
           />
@@ -45,7 +45,7 @@ const CharacterCard: FC<CharacterCardProps> = ({ character, icon }) => {
         <Link to={`/characters/${character.id}`}>
           <FontAwesomeIcon
             className="fav-icon go-to-details"
-            icon={solid("right-to-bracket")}
+            icon={solid('right-to-bracket')}
           />
         </Link>
       </section>
@@ -54,7 +54,7 @@ const CharacterCard: FC<CharacterCardProps> = ({ character, icon }) => {
         <div className="character__other-data">
           <p>Specie:</p>
           <span>- {character.species}</span>
-          <p role={"paragraph"}>Status:</p>
+          <p role={'paragraph'}>Status:</p>
           <span>- {character.status}</span>
         </div>
       </section>

@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "./Pagination.css";
-import useAppHook from "../../hooks/useAppHook";
-import { FC, useContext } from "react";
-import AppContext from "../../store/contexts/app.context";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import './Pagination.css';
+import useAppHook from '../../hooks/useAppHook';
+import { FC, useContext } from 'react';
+import AppContext from '../../store/contexts/app.context';
 
 interface PaginationProps {
-  typeOfPagination: "planets" | "characters";
+  typeOfPagination: 'planets' | 'characters';
 }
 
 const Pagination: FC<PaginationProps> = ({ typeOfPagination }) => {
@@ -19,16 +19,16 @@ const Pagination: FC<PaginationProps> = ({ typeOfPagination }) => {
       <FontAwesomeIcon
         data-testid="button-left"
         className="pagination__item"
-        icon={solid("angle-left")}
+        icon={solid('angle-left')}
         onClick={() => {
-          typeOfPagination === "planets"
-            ? planetsPagination("prev")
-            : charactersPagination("prev");
+          typeOfPagination === 'planets'
+            ? planetsPagination('prev')
+            : charactersPagination('prev');
         }}
       />
       <div className="pagination__page-number-container">
         <p className="pagination__page-number">{`${
-          typeOfPagination === "planets"
+          typeOfPagination === 'planets'
             ? currentPagePlanets
             : currentPageCharacters
         }`}</p>
@@ -36,11 +36,11 @@ const Pagination: FC<PaginationProps> = ({ typeOfPagination }) => {
       <FontAwesomeIcon
         data-testid="button-right"
         className="pagination__item"
-        icon={solid("angle-right")}
+        icon={solid('angle-right')}
         onClick={() => {
-          typeOfPagination === "planets"
-            ? planetsPagination("next")
-            : charactersPagination("next");
+          typeOfPagination === 'planets'
+            ? planetsPagination('next')
+            : charactersPagination('next');
         }}
       />
     </div>

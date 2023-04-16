@@ -1,6 +1,6 @@
-import { createContext, Dispatch } from "react";
-import { AppActions } from "../actions/actions";
-import { AppState } from "../../types/appInterfaces";
+import { createContext, Dispatch } from 'react';
+import { AppActions } from '../actions/actions';
+import { AppState } from '../../types/appInterfaces';
 
 interface AppContextProps {
   state: AppState;
@@ -13,33 +13,33 @@ const AppContext = createContext<AppContextProps>({
     characters: [],
     planetDetails: {
       id: 0,
-      name: "",
-      type: "",
-      dimension: "",
-      created: "",
-      residents: [""],
+      name: '',
+      type: '',
+      dimension: '',
+      created: '',
+      residents: [''],
     },
     characterDetails: {
       id: 0,
-      name: "",
-      status: "",
-      species: "",
-      gender: "",
-      created: "",
-      image: "",
-      url: "",
+      name: '',
+      status: '',
+      species: '',
+      gender: '',
+      created: '',
+      image: '',
+      url: '',
     },
     currentPagePlanets: 1,
     currentPageCharacters: 1,
     favCharacter: {
       id: 0,
-      name: "",
-      status: "",
-      species: "",
-      gender: "",
-      image: "",
-      url: "",
-      created: "",
+      name: '',
+      status: '',
+      species: '',
+      gender: '',
+      image: '',
+      url: '',
+      created: '',
       rating: 0,
     },
     favCharacters: [],

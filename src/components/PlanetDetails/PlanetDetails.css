@@ -30,7 +30,7 @@
 
 .p-d-info__text h1,
 .p-d-container__characters h1 {
-  font-family: "Schwifty", monospace;
+  font-family: 'Schwifty', monospace;
   font-size: 2.5rem;
   color: hsl(120, 70%, 50%);
   margin: 0 auto;

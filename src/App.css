@@ -1,5 +1,5 @@
 #root {
-  background: url("./assets/background-animated.gif");
+  background: url('./assets/background-animated.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

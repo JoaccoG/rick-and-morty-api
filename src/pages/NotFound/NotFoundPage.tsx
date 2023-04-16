@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import "./NotFoundPage.css";
+import { Link } from 'react-router-dom';
+import './NotFoundPage.css';
 
 const NotFound = () => {
   return (
@@ -8,10 +8,10 @@ const NotFound = () => {
         <div className="error-container__img-container">
           <span>44</span>
         </div>
-        <p role={"paragraph"}>
+        <p role={'paragraph'}>
           The page you are trying to reach has been moved to another universe.
         </p>
-        <Link className="button" to={"/"}>
+        <Link className="button" to={'/'}>
           Return to real dimension
         </Link>
       </section>

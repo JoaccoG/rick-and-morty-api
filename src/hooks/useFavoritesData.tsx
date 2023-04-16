@@ -1,13 +1,13 @@
-import { useCallback, useContext } from "react";
-import { getCharacterById } from "../api/data";
+import { useCallback, useContext } from 'react';
+import { getCharacterById } from '../api/data';
 import {
   addFavoriteCharacter,
   getFavoriteCharacters,
   removeFavoriteCharacter,
-} from "../api/data-favorites";
-import { ActionTypes, AppActions } from "../store/actions/actions";
-import AppContext from "../store/contexts/app.context";
-import { Character } from "../types/appInterfaces";
+} from '../api/data-favorites';
+import { ActionTypes, AppActions } from '../store/actions/actions';
+import AppContext from '../store/contexts/app.context';
+import { Character } from '../types/appInterfaces';
 
 const useFavoriteData = () => {
   const { state, dispatch } = useContext(AppContext);

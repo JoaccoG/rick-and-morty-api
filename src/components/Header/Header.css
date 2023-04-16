@@ -58,7 +58,7 @@
   color: var(--main-color-hover);
 }
 .header-cont__navbar ul li a::after {
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 0px;

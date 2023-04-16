@@ -1,12 +1,12 @@
-import { useCallback, useContext } from "react";
+import { useCallback, useContext } from 'react';
 import {
   getCharacterById,
   getCharactersData,
   getPlanetById,
   getPlanetsData,
-} from "../api/data";
-import { ActionTypes, AppActions } from "../store/actions/actions";
-import AppContext from "../store/contexts/app.context";
+} from '../api/data';
+import { ActionTypes, AppActions } from '../store/actions/actions';
+import AppContext from '../store/contexts/app.context';
 
 const useAppHook = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -30,7 +30,7 @@ const useAppHook = () => {
     dispatch(initializeCharactersAction);
   }, [dispatch, currentPageCharacters]);
 
-  const planetsPagination = async (direction: "next" | "prev") => {
+  const planetsPagination = async (direction: 'next' | 'prev') => {
     const getNextPlanets: AppActions = {
       type: ActionTypes.NEXT_PAGE_PLANETS,
       payload: 7,
@@ -38,10 +38,10 @@ const useAppHook = () => {
     const getPrevPlanets: AppActions = {
       type: ActionTypes.PREV_PAGE_PLANETS,
     };
-    direction === "next" ? dispatch(getNextPlanets) : dispatch(getPrevPlanets);
+    direction === 'next' ? dispatch(getNextPlanets) : dispatch(getPrevPlanets);
   };
 
-  const charactersPagination = async (direction: "next" | "prev") => {
+  const charactersPagination = async (direction: 'next' | 'prev') => {
     const getNextCharacters: AppActions = {
       type: ActionTypes.NEXT_PAGE_CHARACTERS,
       payload: 42,
@@ -49,7 +49,7 @@ const useAppHook = () => {
     const getPrevCharacters: AppActions = {
       type: ActionTypes.PREV_PAGE_CHARACTERS,
     };
-    direction === "next"
+    direction === 'next'
       ? dispatch(getNextCharacters)
       : dispatch(getPrevCharacters);
   };

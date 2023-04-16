@@ -1,8 +1,8 @@
-import { FC } from "react";
-import { Link } from "react-router-dom";
-import { Character } from "../../types/appInterfaces";
-import { Title } from "../Title/Title";
-import "./CharacterDetails.css";
+import { FC } from 'react';
+import { Link } from 'react-router-dom';
+import { Character } from '../../types/appInterfaces';
+import { Title } from '../Title/Title';
+import './CharacterDetails.css';
 
 interface CharacterDetailsProps {
   character: Character;
@@ -14,7 +14,7 @@ const CharacterDetails: FC<CharacterDetailsProps> = ({ character }) => {
       <article className="character-details__container">
         <Title text={`${character.name}`} cssClass="character-details__title" />
         <section className="character-details__sprites">
-          <Link to={"/planets"}>
+          <Link to={'/planets'}>
             <img
               className="c-d-sprite__planet"
               src={`/assets/img/planet-${
@@ -23,7 +23,7 @@ const CharacterDetails: FC<CharacterDetailsProps> = ({ character }) => {
               alt={`planet of ${character.name}`}
             />
           </Link>
-          <Link to={"/characters"}>
+          <Link to={'/characters'}>
             <img
               className="c-d-sprite__avatar"
               src={character.image}
@@ -32,7 +32,7 @@ const CharacterDetails: FC<CharacterDetailsProps> = ({ character }) => {
           </Link>
         </section>
         <section className="character-details__info">
-          <p role={"paragraph"}>Status</p>
+          <p role={'paragraph'}>Status</p>
           <span data-testid="character-status">{character.status}</span>
           <p>Specie</p>
           <span>{character.species}</span>
