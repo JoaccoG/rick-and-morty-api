@@ -1,5 +1,5 @@
-import { ActionTypes, AppActions } from "../actions/actions";
-import { AppState } from "../../types/appInterfaces";
+import { ActionTypes, AppActions } from '../actions/actions';
+import { AppState } from '../../types/appInterfaces';
 
 const appReducer = (state: AppState, action: AppActions): AppState => {
   const {
