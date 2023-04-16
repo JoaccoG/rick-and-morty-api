@@ -1,4 +1,4 @@
-import { Character, FavCharacter } from "../types/appInterfaces";
+import { Character, FavCharacter } from '../types/appInterfaces';
 
 interface FavoriteCharacterName {
   name: string;
@@ -22,8 +22,8 @@ export const addFavoriteCharacter = async (character: Character) => {
   const response = await fetch(
     `https://private-api-adzv.onrender.com/characters`,
     {
-      method: "POST",
-      headers: { "content-type": "application/json" },
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
       body: JSON.stringify(mergedData),
     }
   );
@@ -37,8 +37,8 @@ export const changeFavoriteCharacterName = async (
   const response = await fetch(
     `https://private-api-adzv.onrender.com/characters/${characterId}`,
     {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
       body: JSON.stringify(characterName),
     }
   );
@@ -52,8 +52,8 @@ export const setFavoriteCharacterRating = async (
   const response = await fetch(
     `https://private-api-adzv.onrender.com/characters/${characterId}`,
     {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
       body: JSON.stringify(characterRating),
     }
   );
@@ -64,8 +64,8 @@ export const removeFavoriteCharacter = async (characterId: number) => {
   const response = await fetch(
     `https://private-api-adzv.onrender.com/characters/${characterId}`,
     {
-      method: "DELETE",
-      headers: { "content-type": "application/json" },
+      method: 'DELETE',
+      headers: { 'content-type': 'application/json' },
     }
   );
   return response.status;

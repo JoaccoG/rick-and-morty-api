@@ -1,4 +1,4 @@
-import { Characters, Character, Planets, Planet } from "../types/appInterfaces";
+import { Characters, Character, Planets, Planet } from '../types/appInterfaces';
 
 export const getPlanetsData = async (page: number) => {
   const response = await fetch(
