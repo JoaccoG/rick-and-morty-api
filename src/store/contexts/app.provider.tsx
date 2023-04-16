@@ -1,4 +1,4 @@
-import { FC, Reducer, useReducer } from "react";
+import { FC, Reducer, useMemo, useReducer } from "react";
 import { AppActions } from "../actions/actions";
 import { AppState } from "../../types/appInterfaces";
 import appReducer from "../reducers/appReducer";
@@ -49,10 +49,11 @@ const AppProvider: FC<DataProviderProps> = ({ children }) => {
     }
   );
 
+  const value = useMemo(() => ({ state, dispatch }), []);
   return (
-    <AppContext.Provider value={{ state, dispatch }}>
-      {children}
-    </AppContext.Provider>
+    <>
+      <AppContext.Provider value={value}>{children}</AppContext.Provider>
+    </>
   );
 };
 
