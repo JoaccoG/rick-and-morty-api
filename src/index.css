@@ -5,18 +5,18 @@
 }
 
 @font-face {
-  font-family: "IBM-Plex-Mono";
-  src: local("IBM-Plex-Mono"),
-    url("./assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf"),
-    format("truetype");
+  font-family: 'IBM-Plex-Mono';
+  src: local('IBM-Plex-Mono'),
+    url('./assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf'),
+    format('truetype');
 }
 
 @font-face {
-  font-family: "Schwifty";
-  src: local("Schwifty"),
-    url("./assets/fonts/Schwifty/get_schwifty-webfont.woff2") format("woff2"),
-    local("Schwifty"),
-    url("./assets/fonts/Schwifty/get_schwifty-webfont.woff") format("woff");
+  font-family: 'Schwifty';
+  src: local('Schwifty'),
+    url('./assets/fonts/Schwifty/get_schwifty-webfont.woff2') format('woff2'),
+    local('Schwifty'),
+    url('./assets/fonts/Schwifty/get_schwifty-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +30,7 @@
 }
 
 html {
-  font-family: "IBM-Plex-Mono", monospace;
+  font-family: 'IBM-Plex-Mono', monospace;
 }
 
 ul,
